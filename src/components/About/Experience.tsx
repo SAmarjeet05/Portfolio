@@ -21,7 +21,7 @@ export const Experience = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-lg p-6 border border-white/20 dark:border-white/10 hover:border-blue-500/50 transition-all duration-300"
+              className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-lg p-6 border border-gray-200 dark:border-white/10 hover:border-blue-500/50 dark:hover:border-cyan-400/50 shadow-lg dark:hover:shadow-xl hover:shadow-xl transition-all duration-300"
             >
               <div className="flex items-start gap-4">
                 <img
@@ -66,7 +66,7 @@ export const Experience = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-lg p-6 border border-white/20 dark:border-white/10 hover:border-blue-500/50 transition-all duration-300"
+              className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-lg p-6 border border-gray-200 dark:border-white/10 hover:border-blue-500/50 dark:hover:border-cyan-400/50 shadow-lg dark:hover:shadow-xl hover:shadow-xl transition-all duration-300"
             >
               <h4 className="font-bold text-gray-800 dark:text-white mb-1">
                 {edu.degree}

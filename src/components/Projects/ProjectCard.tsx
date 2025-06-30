@@ -25,7 +25,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-xl border border-white/20 dark:border-white/10 overflow-hidden hover:border-blue-500/50 transition-all duration-300 group"
+      className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-xl border border-gray-200 dark:border-white/10 overflow-hidden hover:border-blue-500/50 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
     >
       {/* Image Gallery */}
       <div className="relative h-48 overflow-hidden">

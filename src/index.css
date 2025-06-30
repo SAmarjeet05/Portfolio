@@ -90,8 +90,11 @@ body.dark {
 }
 
 /* Enhanced gradient shadows for all gradient buttons */
+.bg-gradient-to-r.from-blue-500.to-cyan-500 {
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
 .bg-gradient-to-r.from-blue-500.to-cyan-500:hover {
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4), 0 0 60px rgba(6, 182, 212, 0.3);
   transform: translateY(-2px);
 }
 
@@ -144,4 +147,11 @@ body.dark {
   --text-primary: #f9fafb;
   --text-secondary: #d1d5db;
   --bg-primary: #111827;
+}
+
+.icon-button-fix {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

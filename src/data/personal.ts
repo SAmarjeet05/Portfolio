@@ -1,7 +1,7 @@
 export const personalInfo = {
-  name: "Alex Johnson",
-  title: "Full Stack Developer",
-  tagline: "Building digital experiences that inspire and engage",
+  name: "Amarjeet Singh",
+  title: "AI & ML Enthusiast",
+  tagline: "Building Smarter Futures with Machine Learning",
   bio: "I'm a passionate full-stack developer with 3+ years of experience creating modern web applications. I love turning complex problems into simple, beautiful solutions that users enjoy interacting with.",
   email: "alex.johnson@email.com",
   phone: "+1234567890",

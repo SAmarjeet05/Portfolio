@@ -7,7 +7,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 export const Certificates = () => {
   return (
     <section id="certificates" className="py-20 relative">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 md:px-16 lg:px-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export const Certificates = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-xl border border-white/20 dark:border-white/10 overflow-hidden hover:border-blue-500/50 transition-all duration-300 group cursor-pointer"
+                className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-xl border border-gray-200 dark:border-white/10 overflow-hidden hover:border-blue-500/50 transition-all duration-300 group cursor-pointer shadow-lg dark:shadow-none"
               >
                 <PhotoView src={certificate.image}>
                   <div className="relative h-48 overflow-hidden">

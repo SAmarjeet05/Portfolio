@@ -25,8 +25,8 @@ export const ParticleBackground = () => {
           mode: "push",
         },
         onHover: {
-          enable: true,
-          mode: "repulse",
+          enable: false,
+          mode: undefined,
         },
         resize: true,
       },
@@ -98,8 +98,8 @@ export const ParticleBackground = () => {
           mode: "push",
         },
         onHover: {
-          enable: true,
-          mode: "repulse",
+          enable: false,
+          mode: undefined,
         },
         resize: true,
       },

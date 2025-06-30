@@ -9,10 +9,11 @@ export const Contact = () => {
 
   const handleEmailSubmit = () => {
     if (!message.trim()) return;
-    
-    const subject = 'Portfolio Contact';
+
+    const subject = encodeURIComponent('Portfolio Contact');
     const body = encodeURIComponent(message);
-    window.open(`mailto:${personalInfo.email}?subject=${subject}&body=${body}`);
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}&su=${subject}&body=${body}`;
+    window.open(gmailUrl, '_blank');
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
   };
@@ -53,7 +54,7 @@ export const Contact = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-2xl mx-auto"
         >
-          <div className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-2xl border border-white/20 dark:border-white/10 p-8">
+          <div className="bg-white/10 dark:bg-black/20 backdrop-blur-lg rounded-2xl border border-gray-200 dark:border-white/10 p-8 shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="mb-6">
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
                 Your Message
@@ -63,7 +64,7 @@ export const Contact = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Tell me about your project or just say hello..."
                 rows={6}
-                className="w-full px-4 py-3 rounded-xl bg-white/20 dark:bg-black/30 border border-white/30 dark:border-white/20 focus:border-blue-500 focus:outline-none text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 resize-none transition-all duration-300"
+                className="w-full px-4 py-3 rounded-xl bg-white/20 dark:bg-black/30 border border-gray-200 dark:border-white/20 focus:border-blue-500 focus:outline-none text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 resize-none transition-all duration-300"
               />
             </div>
 

@@ -8,7 +8,7 @@ export const Projects = () => {
 
   return (
     <section id="projects" className="py-20 relative">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 md:px-16 lg:px-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
