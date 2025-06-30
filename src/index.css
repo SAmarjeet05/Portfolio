@@ -17,6 +17,21 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background 1s ease;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Ensure theme classes work properly */
+html.light,
+body.light {
+  color-scheme: light;
+}
+
+html.dark,
+body.dark {
+  color-scheme: dark;
 }
 
 /* Custom scrollbar */
@@ -49,6 +64,35 @@ body {
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient button hover effects */
+.gradient-hover {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.gradient-hover:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4), 0 0 60px rgba(6, 182, 212, 0.3);
+  transform: translateY(-2px);
+}
+
+.gradient-hover-border {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.gradient-hover-border:hover {
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.3), 0 0 50px rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Enhanced gradient shadows for all gradient buttons */
+.bg-gradient-to-r.from-blue-500.to-cyan-500:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4), 0 0 60px rgba(6, 182, 212, 0.3);
+  transform: translateY(-2px);
 }
 
 /* Gradient text selection */

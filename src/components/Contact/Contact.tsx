@@ -71,7 +71,7 @@ export const Contact = () => {
               <motion.button
                 onClick={handleEmailSubmit}
                 disabled={!message.trim() || isSubmitted}
-                className="flex-1 flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
+                className="flex-1 flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 gradient-hover"
                 whileHover={{ scale: message.trim() ? 1.02 : 1 }}
                 whileTap={{ scale: message.trim() ? 0.98 : 1 }}
               >
@@ -91,7 +91,7 @@ export const Contact = () => {
               <motion.button
                 onClick={handleWhatsAppSubmit}
                 disabled={!message.trim() || isSubmitted}
-                className="flex-1 flex items-center justify-center gap-3 px-6 py-4 border-2 border-green-500 text-green-500 rounded-xl font-semibold text-lg hover:bg-green-500 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
+                className="flex-1 flex items-center justify-center gap-3 px-6 py-4 border-2 border-green-500 text-green-500 rounded-xl font-semibold text-lg hover:bg-green-500 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 gradient-hover-border"
                 whileHover={{ scale: message.trim() ? 1.02 : 1 }}
                 whileTap={{ scale: message.trim() ? 0.98 : 1 }}
               >

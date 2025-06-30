@@ -25,11 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`min-h-screen transition-all duration-1000 ${
-      theme === 'light' 
-        ? 'bg-gradient-to-br from-white via-blue-50 to-cyan-100' 
-        : 'bg-gradient-to-br from-gray-900 via-black to-blue-900'
-    }`}>
+    <div className="min-h-screen transition-all duration-1000">
       <ParticleBackground />
       
       <AnimatePresence mode="wait">
@@ -54,7 +50,7 @@ function App() {
               <Contact />
             </main>
 
-            <footer className="py-8 text-center text-gray-500 dark:text-gray-400 border-t border-white/10 dark:border-white/5">
+            <footer className="py-8 text-center text-gray-500 dark:text-gray-400 border-t border-gray-200/50 dark:border-white/10">
               <div className="container mx-auto px-6">
                 <p>&copy; 2024 Alex Johnson. Built with React, TypeScript, and lots of ❤️</p>
               </div>

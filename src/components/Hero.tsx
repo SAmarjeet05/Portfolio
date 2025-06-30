@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, Eye } from 'lucide-react';
+import { Download, Eye } from 'lucide-react';
 import { personalInfo } from '../data/personal';
 
 export const Hero = () => {
@@ -8,7 +8,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       <div className="container mx-auto px-6 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ export const Hero = () => {
         >
           <motion.button
             onClick={scrollToProjects}
-            className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
+            className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold text-lg shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 gradient-hover"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -75,28 +75,13 @@ export const Hero = () => {
           <motion.a
             href={personalInfo.resumeUrl}
             download
-            className="px-8 py-4 rounded-full border-2 border-blue-500 text-blue-500 dark:text-blue-400 font-semibold text-lg hover:bg-blue-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2"
+            className="px-8 py-4 rounded-full border-2 border-blue-500 text-blue-500 dark:text-blue-400 font-semibold text-lg hover:bg-blue-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 gradient-hover-border"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <Download size={20} />
             Download Resume
           </motion.a>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 2 }}
-            className="text-gray-400 dark:text-gray-500"
-          >
-            <ArrowDown size={24} />
-          </motion.div>
         </motion.div>
       </div>
     </section>
