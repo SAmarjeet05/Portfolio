@@ -88,7 +88,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg font-medium text-sm hover:shadow-lg transition-all duration-300"
+            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg font-medium text-sm hover:shadow-lg transition-all duration-300 gradient-hover"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -99,7 +99,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-4 py-2 border border-blue-500/50 text-blue-500 dark:text-blue-400 rounded-lg font-medium text-sm hover:bg-blue-500/10 transition-all duration-300"
+            className="flex items-center justify-center gap-2 px-4 py-2 border border-blue-500/50 text-blue-500 dark:text-blue-400 rounded-lg font-medium text-sm hover:bg-blue-500/10 transition-all duration-300 gradient-hover-border"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
