@@ -17,6 +17,18 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease;
+}
+
+/* Ensure theme classes work properly */
+html.light,
+body.light {
+  color-scheme: light;
+}
+
+html.dark,
+body.dark {
+  color-scheme: dark;
 }
 
 /* Custom scrollbar */
@@ -51,32 +63,6 @@ body {
   animation: float 6s ease-in-out infinite;
 }
 
-/* Gradient text selection */
-::selection {
-  @apply bg-blue-500/20;
-}
-
-::-moz-selection {
-  @apply bg-blue-500/20;
-}
-
-/* Custom utilities */
-.text-gradient {
-  @apply text-transparent bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text;
-}
-
-.bg-glass {
-  @apply bg-white/10 dark:bg-black/20 backdrop-blur-lg border border-white/20 dark:border-white/10;
-}
-
-.hover-glow {
-  transition: all 0.3s ease;
-}
-
-.hover-glow:hover {
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
-}
-
 /* Gradient button hover effects */
 .gradient-hover {
   position: relative;
@@ -104,6 +90,32 @@ body {
 .bg-gradient-to-r.from-blue-500.to-cyan-500:hover {
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.4), 0 0 60px rgba(6, 182, 212, 0.3);
   transform: translateY(-2px);
+}
+
+/* Gradient text selection */
+::selection {
+  @apply bg-blue-500/20;
+}
+
+::-moz-selection {
+  @apply bg-blue-500/20;
+}
+
+/* Custom utilities */
+.text-gradient {
+  @apply text-transparent bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text;
+}
+
+.bg-glass {
+  @apply bg-white/10 dark:bg-black/20 backdrop-blur-lg border border-white/20 dark:border-white/10;
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
 }
 
 /* Mobile optimizations */
