@@ -7,7 +7,7 @@
 
 This is the source code for my personal portfolio built with React. It showcases my skills, projects, certifications, and professional background using a modern, responsive design with smooth interactions and animations.
 
-> ⚠️ Some portions of this portfolio were AI-assisted (Bolt/ChatGPT), curated and customized by me.
+> ⚠️  were AI-assisted (Bolt/ChatGPT), curated and customized by me.
 
 ---
 
