@@ -49,7 +49,7 @@ This is the source code for my personal portfolio built with React. It showcases
 ├── LICENSE.md              # Human-readable summary
 ├── README.md               # This file
 └── package.json            # Metadata & dependencies
-
+```
 ---
 
 ## 🧠 AI Contribution
