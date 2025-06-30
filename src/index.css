@@ -17,7 +17,10 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.3s ease;
+  transition: background 1s ease;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 /* Ensure theme classes work properly */

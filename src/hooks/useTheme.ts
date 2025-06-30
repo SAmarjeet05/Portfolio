@@ -29,6 +29,13 @@ export const useTheme = () => {
     // Update data attribute for better CSS targeting
     document.documentElement.setAttribute('data-theme', theme);
     
+    // Apply background directly to body
+    if (theme === 'light') {
+      document.body.style.background = 'linear-gradient(to bottom right, #ffffff, #f9fafb, #dbeafe)';
+    } else {
+      document.body.style.background = 'linear-gradient(to bottom right, #111827, #000000, #1e3a8a)';
+    }
+    
     // Force a re-render by updating a CSS custom property
     document.documentElement.style.setProperty('--theme-mode', theme);
   }, [theme]);

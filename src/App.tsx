@@ -24,13 +24,8 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Force re-render when theme changes
-  const backgroundClass = theme === 'light' 
-    ? 'bg-gradient-to-br from-white via-gray-50 to-blue-50' 
-    : 'bg-gradient-to-br from-gray-900 via-black to-blue-900';
-
   return (
-    <div className={`min-h-screen transition-all duration-1000 ${backgroundClass}`} key={theme}>
+    <div className="min-h-screen transition-all duration-1000">
       <ParticleBackground />
       
       <AnimatePresence mode="wait">
