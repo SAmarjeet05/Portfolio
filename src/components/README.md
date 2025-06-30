@@ -67,7 +67,7 @@ You may use and adapt this work for non-commercial purposes, with proper credit 
 
 ## 📬 Contact
 
--🌐 Website: netlify link
--🧑‍💻 GitHub: https://github.com/SAmarjeet05
--💼 LinkedIn: https://www.linkedin.com/in/SAmarjeet02
--📧 Email: amar2005.reet@gmail.com
+- 🌐 Website: netlify link
+- 🧑‍💻 GitHub: https://github.com/SAmarjeet05
+- 💼 LinkedIn: https://www.linkedin.com/in/SAmarjeet02
+- 📧 Email: amar2005.reet@gmail.com
