@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MessageCircle, Send, CheckCircle } from 'lucide-react';
+import { Mail, MessageCircle, CheckCircle } from 'lucide-react';
 import { personalInfo } from '../../data/personal';
 
 export const Contact = () => {

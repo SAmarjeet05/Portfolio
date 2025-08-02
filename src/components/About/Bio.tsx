@@ -13,7 +13,9 @@ export const Bio = () => {
         About Me
       </h3>
       <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-        {personalInfo.bio}
+        {personalInfo.bio.split("\n").map((line, index) => (
+        <p key={index} className="mb-4">{line}</p>
+      ))}
       </p>
     </motion.div>
   );

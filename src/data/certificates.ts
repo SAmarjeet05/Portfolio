@@ -1,30 +1,37 @@
 export const certificates = [
   {
     id: 1,
-    title: "AWS Certified Developer Associate",
-    issuer: "Amazon Web Services",
-    date: "2023",
-    image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    title: "Artificial Intelligence Course",
+    issuer: "RineX.Ai",
+    date: "July 2024",
+    image: "/certificates/1.png?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   },
   {
     id: 2,
-    title: "React Professional Certificate",
-    issuer: "Meta",
-    date: "2023",
-    image: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    title: "Artificial Intelligence Internship",
+    issuer: "TEACHNOOK (TEACHSCAPE ONLINE LEARNING SERVICES PRIVATE LIMITED)",
+    date: "May 2024",
+    image: "/certificates/2.png?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   },
   {
     id: 3,
-    title: "Full Stack Web Development",
-    issuer: "freeCodeCamp",
-    date: "2022",
-    image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    title: "Java (Basic) Certification Test",
+    issuer: "HackerRank",
+    date: "May 2025",
+    image: "/certificates/3.png?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   },
   {
     id: 4,
-    title: "Google Cloud Professional",
-    issuer: "Google Cloud",
-    date: "2023",
-    image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    title: "Python (Basic) Certificate",
+    issuer: "HackerRank",
+    date: "July 2025",
+    image: "/certificates/4.png?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+  },
+  {
+    id: 5,
+    title: "Data to Generative AI (Code Vipassana)",
+    issuer: "Google Developer Groups (GDG) - Cloud Kochi",
+    date: "December 2023",
+    image: "/certificates/5.png?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   }
 ];
