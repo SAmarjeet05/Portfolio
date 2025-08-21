@@ -25,13 +25,13 @@ export const Projects = () => {
 
         {/* Featured Projects */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {featuredProjects.map((project, index) => (
+          {/*featuredProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
-          ))}
+          ))*/}
         </div>
 
         {/* Other Projects */}
-        {otherProjects.length > 0 && (
+        {/*otherProjects.length > 0 && (
           <>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export const Projects = () => {
               ))}
             </div>
           </>
-        )}
+        )} */}
       </div>
     </section>
   );
